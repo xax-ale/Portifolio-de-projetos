@@ -25,7 +25,6 @@ jobs:
         with:
           node-version: 18  # Certifique-se de que a versão do Node é compatível
           package-manager: pnpm@latest  # Use a versão mais recente do pnpm ou especifique a versão que você precisa
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
