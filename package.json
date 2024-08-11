@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.13.3"
-  }
+    "@astrojs/check": "^0.8.2",
+    "astro": "^4.12.2",
+    "bootstrap": "^5.3.3",
+    "git": "^0.1.5",
+    "typescript": "^5.5.3"
+  },
+  "packageManager": "pnpm@8.6.0"
 }
