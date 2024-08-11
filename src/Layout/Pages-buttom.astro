@@ -1,0 +1,44 @@
+---
+import Tudo from "../pages/Posts/Tudo.astro"
+import Planilhas from "../pages/Posts/Planilhas.astro"
+import Sobre from "../pages/Posts/Sobre.astro"
+import Web from "../pages/Posts/Web.astro"
+import Dashbords from "../pages/Posts/Dashbords.astro"
+---
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="true">
+    <ul class="nav nav-underline nav-fill nav-pills nav-justified flex-sm-row flex-wrap nav-indicators px-3">
+        <li class="nav-item">
+            <button class="nav-link texto texto-4 text-dark shadow p-3 mb-5 bg-body-tertiary rounded bg-dark-subtle" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4">Planilhas</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link texto texto-5 text-dark shadow p-3 mb-5 bg-body-tertiary rounded bg-dark-subtle" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">Dashboards</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link texto texto-6 text-dark shadow p-3 mb-5 bg-body-tertiary rounded bg-light-subtle" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  aria-current="true">Tudo</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link texto texto-7 text-dark shadow p-3 mb-5 bg-body-tertiary rounded bg-dark-subtle"" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">Web</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link texto texto-8 text-dark shadow p-3 mb-5 bg-body-tertiary rounded bg-dark-subtle" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3">Sobre</button>
+        </li>
+    </ul>
+    <div class="carousel-inner w-75 mx-auto pt-3">
+        <div class="carousel-item active">
+            <div class="w-100 mx-auto justify-content-center px-3 fs-5 fw-light"><Tudo /></div>
+        </div>
+        <div class="carousel-item">
+            <div class="w-100 mx-auto justify-content-center px-3 fs-5 fw-light"><Web /></div>
+        </div>
+        <div class="carousel-item">
+            <div class="w-100 mx-auto justify-content-center px-3 fs-5 fw-light"><Dashbords /></div>
+        </div>
+        <div class="carousel-item">
+            <div class="w-100 mx-auto justify-content-center px-3 fs-5 fw-light"><Sobre /></div>
+        </div>
+        <div class="carousel-item">
+            <div class="w-100 mx-auto justify-content-center px-3 fs-5 fw-light"><Planilhas /></div>
+        </div>
+
+    </div>
+</div>

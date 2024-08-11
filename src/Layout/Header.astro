@@ -1,0 +1,40 @@
+<header class="position-fixed w-100 z-3">
+    <nav class="navbar navbar-expand-lg bg-dark shadow bg-dark-tertiary rounded-0 z-3">
+        <div class="container-fluid">
+            <a href="#home" class="navbar-brand fs-4 pb-3 ps-5 text-light">Alê Henrique</a>
+            <button class="navbar-toggler text-light shadow-none border-0 text-decoration-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-decoration-none"><i class='bx bx-dots-vertical-rounded fs-1 text-decoration-none text-light'></i></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-dark " tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-light" id="navbarNavLabel">Menu</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav d-flex justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item pe-5">
+                            <a class="dropdown dropdown-toggle-split text-decoretion-none link-dark me-3 mb-3">
+                                <button class="btn btn-secondary dropdown-toggle mb-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    language
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><button class="btn dropdown-item" id="btnChange" type="button"> 🇺🇸 English</button></li>
+                                  <li><button class="btn dropdown-item" id="btnReset" type="button">🇧🇷 Pt-br</button></li>
+                                </ul>
+                              </a>
+                            <a type="button" class="btn btn-outline-secondary me-3 mb-3 texto texto-135">Currículo PDF</a>
+                            <a class="p-1" target="_blank" href="https://www.linkedin.com/in/alexandre-henrique-6104b72a5/"><i class="bx bxl-linkedin fs-2 link-opacity-50 link-opacity-100-hover link-light mt-3"></i></a>
+                            <a class="p-1" target="_blank" href="https://github.com/xax-ale"><i class="bx bxl-github fs-2 link-opacity-50 link-opacity-100-hover mt-3 link-light"></i></a>
+                            <a class="p-1" target="_blank" href="https://wa.me/55416516719"><i class="bx bxl-whatsapp fs-2 mt-3 link-opacity-50 link-opacity-100-hover link-light"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+</div>
+
+<a type="button" href="#home" class="btn btn-sm btn-outline-dark shadow position-fixed bottom-0 end-0 z-1 rounded-circle mb-5 me-5 scroll-button" style="opacity: 0; transition: opacity 0.3s, visibility 0.3s; visibility: hidden;"><i class='bx bx-chevron-up fs-2 pt-1'></i></a>
+<script>window.addEventListener('scroll', function() { var scrollButton = document.querySelector('.scroll-button'); if (window.scrollY > 100) { scrollButton.style.opacity = '1'; scrollButton.style.visibility = 'visible'; } else { scrollButton.style.opacity = '0'; scrollButton.style.visibility = 'hidden'; } });</script>
