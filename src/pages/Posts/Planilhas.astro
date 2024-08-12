@@ -1,0 +1,164 @@
+---
+import { Image } from 'astro:assets';
+import PlanilhaGestão from "/src/Imagens/Planilha de gestão.png";
+import PlanilhaGestãoZoom from "/src/Imagens/Planilha de gestão zoom.png";
+import ExemplodePJS from "/src/Imagens/Exemplo de planilha com javascript.png";
+---
+  <div class="card mb-3 "></div>
+    <div class="row g-0 p-5 shadow border-dark ">
+      <div class="col-md-4">
+        <Image class="img-fluid rounded-start" src={PlanilhaGestãoZoom} alt="Imagem zoom da planilha de gestão de alê henrique" />
+      </div>
+      <div  id="planilhadegestao" class="col-md-8">
+        <div class="card-body ps-3">
+          <h5 class="card-title pt-2 pb-1 texto texto-9">Planilha de gestão</h5>
+          <p class="card-text texto texto-10">
+            Desenvolvi uma solução de gestão avançada, composta por 39 planilhas no Google Planilhas, que integra funções avançadas, validação de dados, e cálculos automáticos entre múltiplas planilhas ...
+          </p>
+          <p class="d-inline-flex gap-1">
+            <a class="btn btn-secondary texto texto-11" data-bs-toggle="collapse" href="#LerMais1" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Ler mais
+            </a>
+          <p class="card-text"><small class="text-body-secondary texto texto-12">Projeto com Google Planilhas</small></p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+<div class="collapse w-100" id="LerMais1">
+  <h5 class="card card-body py-2 fs-5 shadow-none border-0 text-secondary-emphasis text-wrap text-break">
+    <p class="fs-5 texto texto-13"><small>Essa estrutura permite uma comunicação instantânea entre os setores de RH e contabilidade, otimizada para calcular lucros e despesas da empresa com precisão.</small></p>
+
+    <h3 class="mt-4 texto texto-14">Características :</h3>
+    <ul class="list">
+        <li class="mb-2 fs-5 texto texto-15">
+          <small>
+            <strong>Integração Completa:</strong> A planilha conecta diversas funções e setores, garantindo que as atualizações em uma área sejam refletidas automaticamente em outras, facilitando a gestão de produtos, funcionários, vagas e inventário.
+          </small>
+        </li>
+        <li class="mb-2 fs-5 texto texto-16">
+          <small>
+            <strong>Alta Eficiência:</strong> Com um grande volume de dados interligados, o sistema é projetado para manter a manutenção e atualização de valores rápidas e precisas, minimizando o risco de erros.
+          </small>
+        </li>
+        <li class="mb-2 fs-5 texto texto-17">
+          <small>
+            <strong>Personalização e Adaptação:</strong> O sistema é flexível e pode ser adaptado para atender às necessidades específicas de qualquer empresa, independentemente do volume ou complexidade das operações.     
+          </small>
+        </li>
+        <li class="mb-2 fs-5 texto texto-18">
+          <small>
+          <strong>Segurança e Precisão:</strong> A validação de dados integrada evita erros manuais e garante a integridade das informações, oferecendo uma solução segura e confiável para a gestão empresarial.
+        </small>
+        </li>
+    </ul>
+
+    <p class="fs-5 texto texto-19"><small>Este sistema é ideal para empresas que buscam otimizar processos, melhorar a comunicação entre setores e garantir a precisão dos dados, independentemente do tamanho ou tipo de negócio. Além de ser facilmente transformado em um dashbord de gestão.</small></p>
+    
+    
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed z-0 texto texto-20" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+            Link das planilhas
+          </button>
+        </h2>
+        <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <a type="button" target="_blank" href="https://docs.google.com/spreadsheets/d/1aRsowVQmSFe2ebGrABYlhIiG-H1i2_xOXuiiXjRk52Y/edit?usp=sharing" class="btn btn-secondary texto texto-21">Rh</a>
+            <a type="button" target="_blank" href="https://docs.google.com/spreadsheets/d/14U3iUIuOk2YBqT_EDxzTiQLS8BUeCcR7qu-pdBcJLog/edit?usp=sharing" class="btn btn-secondary  texto texto-22">Contabilidade</a>
+
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed z-0  texto texto-23" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+            Imagem de exemplo da planilha
+          </button>
+        </h2>
+        <div id="flush-collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+           <Image class="img-fluid my-4 w-100" src={PlanilhaGestão} alt="planilha de gestão de alê henrique" style="transition: transform 0.3s; cursor:crosshair;" onclick="var rect = this.getBoundingClientRect(); var x = event.clientX - rect.left; var y = event.clientY - rect.top; if (this.style.transform === 'scale(2)') { this.style.transform = 'scale(1)'; this.style.transformOrigin = 'center center'; } else { this.style.transform = 'scale(2)'; this.style.transformOrigin = x + 'px ' + y + 'px'; }" onwheel="var rect = this.getBoundingClientRect(); var x = event.clientX - rect.left; var y = event.clientY - rect.top; if (event.deltaY < 0) { this.style.transform = 'scale(2)'; this.style.transformOrigin = x + 'px ' + y + 'px'; } else { this.style.transform = 'scale(1)'; this.style.transformOrigin = 'center center'; }" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="btn btn-secondary w-100 mt-5  texto texto-24" data-bs-toggle="collapse" href="#LerMais1" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Recolher
+    </a>
+  </h5>
+</div>
+</div>
+
+<div class="card mb-3 "></div>
+<div class="row g-0 p-5 shadow border-dark ">
+  <div class="col-md-4">
+    <Image class="img-fluid rounded-start" src={ExemplodePJS} alt="planilha com javascript de alê henrique" />
+  </div>
+  <div  id="planilhadegestao" class="col-md-8">
+    <div class="card-body ps-3">
+      <h5 class="card-title pt-2 pb-1 texto texto-25">Conversor de Texto para Planilha</h5>
+      <p class="card-text texto texto-26">
+        Desenvolvi um código JavaScript que facilita a transformação de textos copiados, colados ou arquivos CSV em planilhas formatadas automaticamente ...
+      </p>
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-secondary texto texto-27" data-bs-toggle="collapse" href="#LerMais2" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Ler mais
+        </a>
+      <p class="card-text"><small class="text-body-secondary texto texto-28">Projeto usando Google App Script</small></p>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+<div class="collapse w-100" id="LerMais2">
+<h5 class="card card-body py-2 fs-5 shadow-none border-0 text-secondary-emphasis text-wrap text-break ">
+<p class="fs-5 texto texto-29"><small>Este projeto é ideal para quem precisa converter dados textuais em planilhas de forma rápida e simples.</small></p>
+
+<h3 class="mt-4 texto texto-30">Características do Projeto :</h3>
+<ul class="list">
+    <li class="mb-2 fs-5 texto texto-31">
+      <small>
+        <strong>Conversão Automática:</strong>O código converte textos copiados, colados ou arquivos CSV em uma planilha organizada automaticamente.
+      </small>
+    </li>
+    <li class="mb-2 fs-5 texto texto-32">
+      <small>
+        <strong>Formatação Instantânea:</strong> O sistema ajusta automaticamente o tamanho da fonte e as cores para melhorar a visualização.
+      </small>
+    </li>
+    <li class="mb-2 fs-5 texto texto-33">
+      <small>
+        <strong>Entrada Flexível:</strong>Aceita diferentes tipos de entrada, seja texto simples separado por vírgulas ou arquivos CSV.
+      </small>
+    </li>
+    <li class="mb-2 fs-5 texto texto-34">
+      <small>
+      <strong>Facilidade de Uso:</strong>O processo é simples e elimina a necessidade de formatação manual, economizando tempo.
+    </small>
+    </li>
+</ul>
+
+<p class="fs-5 texto texto-35"><small>Este projeto é uma solução prática para transformar dados textuais em planilhas formatadas de maneira rápida e precisa.</small></p>
+
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed z-0 texto texto-36" type="button" data-bs-toggle="collapse" data-bs-target="#flush-3" aria-expanded="false" aria-controls="flush-collapse1">
+        Link do github
+      </button>
+    </h2>
+    <div id="flush-3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <a type="button" target="_blank" href="https://github.com/xax-ale/Planilha-copia-e-cola" class="btn btn-secondary texto texto-37">Link do projeto</a>
+
+    </div>
+  </div>
+</div>
+<a class="btn btn-secondary w-100 mt-5 texto texto-38" data-bs-toggle="collapse" href="#LerMais2" role="button" aria-expanded="false" aria-controls="collapseExample">
+  Recolher
+</a>
+</h5>
+</div>
+</div
