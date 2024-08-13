@@ -134,7 +134,7 @@ const translations = {
         'texto-132': '<p class="fs-5 texto texto-132"><small>I enjoy learning on my own and am always in search of new technologies and methods. Currently, I am focused on developing my skills in data analysis and programming. I have experience with HTML, CSS, JavaScript, and PHP, thus mastering the basics to use any framework or library, and I am delving into data analysis techniques to transform information into valuable insights.</small></p>',
         'texto-133': '<p class="fs-5 mb-5 texto texto-133"><small>My approach is practical and user-centered, creating interfaces that are not only functional but also enjoyable to use. I am looking for opportunities to apply what I have learned in challenging and innovative projects.</small></p>',
         'texto-134': '<p class="fs-5 mb-5 texto texto-134"><small>I believe that with dedication and effort, I can make significant contributions in the field, helping to make more informed and efficient decisions. I am excited to continue this path and see where it will lead me.</small></p>',
-        'texto-135': '<a type="button" target="_blank" href="https://github.com/user-attachments/files/16604317/Alexandre.Henrique.CV.en.pdf" class="btn btn-outline-secondary me-3 mb-3 texto texto-135">Resume PDF</a>',
+        'texto-135': '<a type="button" target="_blank" href="https://github.com/user-attachments/files/16605092/Alexandre.Henrique.CV.en.pdf" class="btn btn-outline-secondary me-3 mb-3 texto texto-135">Resume PDF</a>',
     }
 };
 
